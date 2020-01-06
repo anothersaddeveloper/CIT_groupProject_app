@@ -4,7 +4,6 @@ import { Images } from '../Themes'
 import styles from './Styles/MedicalHistoryScreen'
 
 export default class MedicalHistoryScreen extends React.Component {
-
   render () {
     return (
       <View style={styles.mainContainer}>

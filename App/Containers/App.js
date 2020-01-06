@@ -1,22 +1,30 @@
+// function App() {
+//   return (
+//     <View>
+//       <button onClick={createNewTodo}><Text>Add Todo</Text></button>
+//     </View>
+//   );
+
 import '../Config'
 import DebugConfig from '../Config/DebugConfig'
 import React, { Component } from 'react'
 import { Provider } from 'react-redux'
 import RootContainer from './RootContainer'
 import createStore from '../Redux'
+import Amplify from '@aws-amplify/core'
+import API from '@aws-amplify/api'
+import PubSub from '@aws-amplify/pubsub'
+import config from '../aws-exports'
+import Auth from '@aws-amplify/auth'
 
-// create our store
+API.configure(config)             // Configure Amplify
+PubSub.configure(config)
+// import Amplify from 'aws-amplify'
+//
+Amplify.configure(config)
+// // create our store
 const store = createStore()
 
-/**
- * Provides an entry point into our application.  Both index.ios.js and index.android.js
- * call this component first.
- *
- * We create our Redux store here, put it into a provider and then bring in our
- * RootContainer.
- *
- * We separate like this to play nice with React Native's hot reloading.
- */
 class App extends Component {
   render () {
     return (

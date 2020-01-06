@@ -53,7 +53,6 @@ export default StyleSheet.create({
   banner: {
     position: 'absolute',
     width: Metrics.screenWidth,
-    backgroundColor: Colors.banner,
     justifyContent: 'center',
     alignItems: 'center',
     bottom: 0,

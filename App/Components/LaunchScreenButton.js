@@ -1,11 +1,10 @@
 import React from 'react'
-import { Image, ScrollView, View, Text, Modal } from 'react-native'
+import { Image, ScrollView, View, Modal } from 'react-native'
 import RoundedButton from './RoundedButton'
 import PresentationScreen from '../Containers/PresentationScreen'
 
 // styles
 import styles from '../Containers/Styles/LaunchScreenStyles'
-import { Images } from '../Themes'
 
 export default class LaunchScreenButton extends React.Component {
   constructor (props) {

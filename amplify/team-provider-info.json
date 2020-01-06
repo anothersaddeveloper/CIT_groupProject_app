@@ -1,0 +1,19 @@
+{
+    "env": {
+        "awscloudformation": {
+            "AuthRoleName": "mediscreen-env-20191023232934-authRole",
+            "UnauthRoleArn": "arn:aws:iam::615175933434:role/mediscreen-env-20191023232934-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::615175933434:role/mediscreen-env-20191023232934-authRole",
+            "Region": "eu-west-1",
+            "DeploymentBucketName": "mediscreen-env-20191023232934-deployment",
+            "UnauthRoleName": "mediscreen-env-20191023232934-unauthRole",
+            "StackName": "mediscreen-env-20191023232934",
+            "StackId": "arn:aws:cloudformation:eu-west-1:615175933434:stack/mediscreen-env-20191023232934/971d28d0-f5e4-11e9-ad3f-0a0272c6a610"
+        },
+        "categories": {
+            "auth": {
+                "mediscreene9585923": {}
+            }
+        }
+    }
+}

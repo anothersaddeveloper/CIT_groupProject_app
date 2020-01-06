@@ -16,8 +16,6 @@ export default class RequestProfessionalScreen extends React.Component {
     }
   }
 
-
-
   componentWillUnmount () {
     NetInfo.isConnected.removeEventListener('connectionChange', this.setConnected)
     NetInfo.removeEventListener('connectionChange', this.setConnectionInfo)

@@ -3,16 +3,14 @@
 // As to not break the automated addition/subtractions.
 import React from 'react'
 import { View, ScrollView, Text, TouchableOpacity, Image } from 'react-native'
-import { createStackNavigator, createAppContainer } from 'react-navigation'
 import { Images } from '../Themes'
 import { Button, TextInput } from 'react-native-paper'
 import styles from './Styles/PayInsuranceScreen'
 
-class PayInsuranceScreen extends React.Component {
+export class DiabetesMediAI extends React.Component {
   state = {
     text: ''
   }
-
   render () {
     return (
       <View style={styles.mainContainer}>
@@ -57,15 +55,3 @@ class PayInsuranceScreen extends React.Component {
     )
   }
 }
-
-const stackNavigator = createStackNavigator({
-  PayInsuranceScreen: {screen: PayInsuranceScreen}
-}, {
-  cardStyle: {
-    opacity: 1
-  },
-  headerMode: 'none',
-  initialRouteName: 'PayInsuranceScreen'
-})
-
-export default createAppContainer(stackNavigator)

@@ -1,0 +1,11 @@
+{
+    "AppSyncApiName": "mediscreen",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "DynamoDBEnableServerSideEncryption": "false",
+    "AuthCognitoUserPoolId": {
+        "Fn::GetAtt": [
+            "authmediscreene9585923",
+            "Outputs.UserPoolId"
+        ]
+    }
+}

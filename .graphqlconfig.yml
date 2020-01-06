@@ -1,0 +1,12 @@
+  projects:
+  mediscreen:
+    schemaPath: src/graphql/schema.json
+    includes:
+      - API-GraphQL
+    excludes:
+      - ./amplify/**
+    extensions:
+      amplify:
+        codeGenTarget: javascript
+        generatedFileName: ''
+        docsFilePath: src/graphql
